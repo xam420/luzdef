@@ -1,0 +1,133 @@
+/*FUENTE*/
+/*COLORES*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: linear-gradient(to right, #2b1c41, #211934, #191526, #120f19, #070707);
+}
+
+header {
+  width: 375px;
+  height: 330px;
+  display: flex;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  justify-content: center;
+  padding-left: 50px;
+}
+header .texto-header {
+  color: white;
+  font-size: 23px;
+  font-family: "Anybody", cursive;
+  font-weight: 700;
+}
+header a {
+  background-color: #FF006E;
+  color: white;
+  font-size: 19px;
+  font-family: "Anybody", cursive;
+  font-weight: 400;
+  padding: 23px;
+  border-radius: 0px 20px 20px 20px;
+}
+
+main {
+  height: 438px;
+  overflow-x: scroll;
+}
+main .container-fotos {
+  display: flex;
+  flex-direction: column;
+}
+main .container-fotos ul {
+  animation: cambio 20s infinite alternate linear;
+}
+main .container-fotos li {
+  width: 375px;
+  height: 300px;
+}
+main .container-fotos li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 768px;
+}
+section .img-info {
+  width: 375px;
+  height: 235px;
+}
+section .img-info img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .texto-info {
+  background-color: #FF006E;
+  padding: 15px;
+  border-radius: 0px 0px 25px 25px;
+}
+section .texto-info p {
+  color: white;
+  font-family: "Anybody", cursive;
+  font-weight: 300;
+  font-size: 14px;
+}
+section .contacto {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  align-items: center;
+}
+section .contacto h2 {
+  color: white;
+  font-size: 27px;
+  font-family: "Anybody", cursive;
+  margin-top: 20px;
+}
+section .enlace1 {
+  margin-top: 25px;
+}
+section .enlace1 a {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Anybody", cursive;
+  font-weight: 300;
+  background-color: #FF006E;
+  padding: 15px 25px 15px 25px;
+  border-radius: 15px 0px 15px 15px;
+}
+section .enlace2 {
+  margin-top: 45px;
+}
+section .enlace2 a {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Anybody", cursive;
+  font-weight: 300;
+  background-color: #FF006E;
+  padding: 15px 25px 15px 25px;
+  border-radius: 15px 0px 15px 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

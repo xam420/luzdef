@@ -52,7 +52,6 @@ main .container-fotos ul {
   animation: cambio 20s infinite alternate linear;
 }
 main .container-fotos li {
-  width: 375px;
   height: 300px;
 }
 main .container-fotos li img {
@@ -68,22 +67,31 @@ section {
   align-items: center;
   width: 375px;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   height: 768px;
+}
+section h2 {
+  font-family: "Anybody", cursive;
+  color: white;
+  font-size: 33px;
+  margin-bottom: 15px;
 }
 section .img-info {
   width: 375px;
   height: 235px;
+  margin-bottom: 15px;
 }
 section .img-info img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 section .texto-info {
   background-color: #FF006E;
   padding: 15px;
-  border-radius: 0px 0px 25px 25px;
+  border-radius: 25px 25px 25px 25px;
+  width: 375px;
 }
 section .texto-info p {
   color: white;
@@ -128,6 +136,88 @@ section .enlace2 a {
   background-color: #FF006E;
   padding: 15px 25px 15px 25px;
   border-radius: 15px 0px 15px 15px;
+}
+
+@media (min-width: 425px) {
+  section {
+    width: 425px;
+  }
+}
+#preguntas {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+#preguntas h2 {
+  color: white;
+  font-family: "Anybody", cursive;
+  font-size: 33px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+#preguntas .acordeon {
+  width: 300px;
+  background-color: #FF006E;
+}
+#preguntas .acordeon label {
+  display: block;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Anybody", cursive;
+  font-weight: 400;
+  color: white;
+  transition: 0.5s;
+}
+#preguntas .acordeon label:hover {
+  background-color: #b40450;
+}
+#preguntas .acordeon .contenido-acordeon {
+  color: white;
+  background-color: #2b1c41;
+  font-family: "Anybody", cursive;
+  font-size: 12px;
+  overflow: hidden;
+  max-height: 0px;
+  margin: 0px;
+  transition: all 300ms ease;
+}
+#preguntas .acordeon .btn-acordeon:checked ~ .contenido-acordeon {
+  max-height: 600px;
+  padding: 15px 0px;
+}
+#preguntas .acordeon .btn-acordeon {
+  display: none;
+}
+
+.flecha {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.flecha img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 375px;
+  height: 50px;
+  background-color: #FF006E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: white;
+  font-family: "Anybody", cursive;
+  font-size: 12px;
+}
+
+@media (min-width: 425px) {
+  footer {
+    width: 425px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

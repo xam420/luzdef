@@ -92,7 +92,7 @@ section h2 {
   color: white;
   font-size: 33px;
   margin-bottom: 15px;
-  margin-top: 45px;
+  margin-top: 100px;
 }
 section .img-info {
   width: 300px;
@@ -161,6 +161,38 @@ section .enlace2 a {
     width: 100%;
   }
 }
+@media (min-width: 700px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 350px 110px;
+    text-align: center;
+    grid-template-areas: "texto texto" "img textop" "contacto contacto";
+    gap: 20px;
+    height: 600px;
+  }
+  section h2 {
+    grid-area: texto;
+  }
+  section .img-info {
+    grid-area: img;
+    padding-left: 50px;
+  }
+  section .texto-info {
+    grid-area: textop;
+    margin-right: 50px;
+  }
+  section .contacto {
+    grid-area: contacto;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+  section .contacto .enlace2 {
+    margin-bottom: 20px;
+  }
+}
 #preguntas {
   display: flex;
   flex-direction: column;
@@ -208,6 +240,15 @@ section .enlace2 a {
   display: none;
 }
 
+@media (min-width: 700px) {
+  #preguntas {
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  #preguntas h2 {
+    margin-bottom: 15px;
+  }
+}
 .flecha {
   width: 50px;
   height: 50px;
